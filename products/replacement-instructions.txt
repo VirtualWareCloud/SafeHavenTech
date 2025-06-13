@@ -1,0 +1,14 @@
+
+SAFEHAVENTECH PRODUCT LINK REPLACEMENT GUIDE
+
+1. Locate each <div class="product-card"> in index.html.
+2. Replace the image src with your product image URL from Amazon.
+3. Update <h3> to match the real product title.
+4. Replace the description in <p> with actual specs or features.
+5. Replace href="#" in the <a> tag with your Amazon affiliate link.
+6. Keep target="_blank" and rel="nofollow noopener" attributes.
+7. Ensure layout remains clean for responsiveness and animation.
+
+Repeat for all 12 product cards.
+
+Site will auto-update on GitHub + Vercel once committed.
