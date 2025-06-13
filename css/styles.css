@@ -1,1 +1,28 @@
 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0f1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.logo {
+  width: 160px;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00ccff;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  font-size: 0.8rem;
+}
