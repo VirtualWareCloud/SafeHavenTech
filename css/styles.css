@@ -1,28 +1,196 @@
+/* ------------------ Base Reset ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0d0f1a;
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
+  background: #0b0d17; /* Deep space background */
   color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ------------------ Announcement Bar ------------------ */
+.announcement-bar {
+  background: linear-gradient(90deg, #0044ff, #00ccff);
+  color: #fff;
   text-align: center;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-.logo {
-  width: 160px;
-  margin-top: 20px;
+/* ------------------ Header Section ------------------ */
+header {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 10;
 }
 
-header h1 {
-  font-size: 2.5rem;
+.header-row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-row-1 .logo {
+  width: 120px;
+  height: auto;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 1.5rem;
   color: #00ccff;
 }
 
-section {
-  padding: 50px 20px;
+.share-button {
+  background: none;
+  border: 1px solid #00ccff;
+  color: #00ccff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
 }
 
-footer {
-  background-color: #111;
+.share-button:hover {
+  background: #00ccff;
+  color: #000;
+}
+
+.header-row-2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.header-row-2 h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 6px #00ccff;
+}
+
+/* ------------------ Separator Line ------------------ */
+.separator {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ccff, transparent);
+  margin: 20px 0;
+}
+
+/* ------------------ Product Grid ------------------ */
+#products {
+  padding: 40px 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
   padding: 20px;
-  font-size: 0.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 204, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 18px #00ccff99;
+}
+
+.product-card:active {
+  transform: scale(0.98);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: #00ccff;
+  font-size: 1.1rem;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* ------------------ Footer Section ------------------ */
+footer {
+  padding: 30px 20px;
+  background: #0a0c14;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+footer .social-icons,
+footer .contact-icons {
+  margin: 15px 0;
+}
+
+footer .social-icons a,
+footer .contact-icons a {
+  margin: 0 10px;
+  color: #00ccff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover,
+footer .contact-icons a:hover {
+  color: #ffde59;
+}
+
+/* ------------------ Reusable Effects ------------------ */
+.glow-border {
+  border: 2px solid #00ccff;
+  box-shadow: 0 0 8px #00ccffaa;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------ Responsive Tweaks ------------------ */
+@media (max-width: 768px) {
+  .header-row-2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .hamburger {
+    font-size: 1.2rem;
+  }
+
+  .share-button {
+    font-size: 0.8rem;
+  }
 }
