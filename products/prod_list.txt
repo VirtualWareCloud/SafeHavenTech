@@ -1,1 +1,22 @@
+SAFEHAVENTECH PRODUCT LINK REPLACEMENT GUIDE
+
+1. Find the <div class="product-card"> for each placeholder.
+2. Replace the <img src="...placeholder..."> with your actual Amazon product image URL.
+3. Update the <h3> title to the real product name.
+4. Modify the <p> description to include key specs from the actual product.
+5. Change the <a href="#" class="buy-button">Buy on Amazon</a> link:
+   - Insert your Amazon affiliate URL in place of "#".
+   - Ensure link has attributes: target="_blank" rel="nofollow noopener".
+6. (Optional) Add Amazon tracking sub-IDs: e.g. ?tag=yourtag-20&ascsubtag=section01–1.
+
+Repeat for all 12 product cards.
+
+Maintaining the existing `.product-card` structure ensures hover and click animations work seamlessly.
+
+---
+
+To deploy:
+- Update links and images.
+- Push changes to GitHub.
+- Vercel will auto-deploy with updates visible instantly.
 
