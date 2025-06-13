@@ -206,3 +206,11 @@ footer .contact-icons a:hover {
     height: 24px;
   }
 }
+.credit {
+  text-align: center;
+}
+
+.credit a {
+  color: #d4af37;
+  text-decoration: none;
+}
