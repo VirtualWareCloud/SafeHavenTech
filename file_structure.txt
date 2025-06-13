@@ -1,0 +1,15 @@
+SafeHavenTech/
+├── index.html
+├── favicon.ico
+├── README.md
+├── /css
+│   └── styles.css
+├── /js
+│   └── scripts.js
+├── /images
+│   └── logo.png
+│   └── banner-placeholder.jpg
+├── /assets
+│   └── ai-logo-sci-fi.png
+└── /products
+    └── smart-cameras.html
